@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="page-header">
+        <h1>Contact Tree</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12" *ngFor="let contact of contacts">
+           <tree-node [contact]="contact"></tree-node>
+        </div>
+    </div>
+
+</div>

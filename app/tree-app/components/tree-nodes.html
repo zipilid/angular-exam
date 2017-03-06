@@ -1,0 +1,6 @@
+<div (click)="clicked=!clicked">{{contact.name}}</div>
+<ul *ngIf="contact.contacts && clicked">
+    <li *ngFor="let contactNode of contact.contacts">
+        <tree-node [contact]="contactNode"></tree-node>
+    </li>
+</ul>
